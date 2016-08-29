@@ -3,13 +3,26 @@
 	<title>Aplicacion 02</title>
 </head>
 <body>
+	<form method="post" action="<?php echo $_SERVER['$accion'];?>">
+
+
+
+	</form>
 <?php 
 
 $tiempo = date("d-m-Y"); 
 $mes = date("m");
-
 echo "<h3>La fecha es: $tiempo</h3>";
+/*
+echo "Today is " . date("Y/m/d") . "<br>";
+echo "Today is " . date("Y.m.d") . "<br>";
+echo "Today is " . date("Y-m-d") . "<br>";
+*/
+$tiempo = date("Y/m/d");
+echo "<h3> La fecha es: $tiempo	</h3>";
 
+$tiempo = date("d-m-y h:i:sa");
+echo "<h3> La fecha es: $tiempo	</h3>";
 
 switch ($mes) 
 {

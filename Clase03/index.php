@@ -1,9 +1,11 @@
  
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
 	<title></title>
 </head>
 <body>
+	<div class="CajaInicio">
 	<form action='Destino.php' method="post">
 		<label>Nombre</label>
 	<input type="text" name= "nombre" placeholder="hola">
@@ -12,6 +14,7 @@
 
 
 	</form> 
+</div>
 </body>
 </html>
 

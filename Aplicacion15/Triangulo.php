@@ -15,11 +15,9 @@ class Triangulo extends FiguraGeometrica
 
 	function Dibujar()
 	{
-		echo "	*	<br>";
-		echo " ***  <br>";
-		echo "***** <br>";
-
-
+		printf("<br>"."&nbsp;"."&nbsp;"."&nbsp;"."&nbsp;"."* <br>");
+		printf("&nbsp;"." ***<br>");
+		printf("*****<br>");
 	}
 	function CalcularDatos()
 	{
@@ -34,6 +32,6 @@ class Triangulo extends FiguraGeometrica
 }
 	
 $prueba = new Triangulo(5,2);
-//echo $prueba->Dibujar();
+echo $prueba->Dibujar();
 //echo $prueba->toString();
 ?>

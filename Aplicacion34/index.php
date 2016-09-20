@@ -8,9 +8,10 @@ Los resultados mostrarlos en una tabla.
 ?>
 <html>
 <head>
-	<title></title>
+	<title>Aplicacion 34</title>
 </head>
 <body>
+	<h1>Aplicacion 34</h1>
 	<?php  
 		$myfile = fopen("palabras.txt","r") or die("no hay archivo");
 		//echo fread($myfile,filesize("palabras.txt"));
@@ -55,11 +56,26 @@ Los resultados mostrarlos en una tabla.
   			//echo fgetc($myfile)."<br>";
 		}
 		fclose($myfile);
-		echo "<br>"."Palabras de 1 letra: ".$palD1L."<br>";
-		echo "Palabras de 2 letras: ".$palD2L."<br>";
-		echo "Palabras de 3 letras: ".$palD3L."<br>";
-		echo "Palabras de 4 letras: ".$palD4L."<br>";
-		echo "Palabras de mas de 4 letras: ".$palDm4;
+		
 	?>
+	<table style="width:100%">
+	<tr>
+		<th>Palabra de 1 letra </th>
+		<th>Palabra de 2 letras</th>
+		<th>Palabra de 3 letras</th>
+		<th>Palabra de 4 letras</th>
+		<th>Palabra de más de 4 letras</th>
+	</tr>
+	<tr>
+		<th><?php echo $palD1L ?></th>
+		<th><?php echo $palD2L ?></th>
+		<th><?php echo $palD3L ?></th>
+		<th><?php echo $palD4L ?></th>
+		<th><?php echo $palDm4 ?></th>
+
+	</tr>
+
+
+
 </body>
 </html>
